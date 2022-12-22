@@ -14,4 +14,7 @@
       <%= link_to "Show this article", article %>
     </p>
   <% end %>
+
+  <%= link_to_prev_page @articles, 'Previous Page' %>
+  <%= link_to_next_page @articles, 'Next Page' %>
 </div>
