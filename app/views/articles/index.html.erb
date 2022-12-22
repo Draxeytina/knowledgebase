@@ -1,0 +1,17 @@
+<p style="color: green"><%= notice %></p>
+
+<h1>Articles</h1>
+
+<%= form_with(url: articles_path, method: :get, data: {turbo_frame: "articles"}) do |f| %>
+  <%= f.text_field :search, placeholder: "Search articles"%>
+  <%= f.submit "Search"%>
+<% end %>
+
+<div id="articles">
+  <% @articles.each do |article| %>
+    <%= render article %>
+    <p>
+      <%= link_to "Show this article", article %>
+    </p>
+  <% end %>
+</div>
