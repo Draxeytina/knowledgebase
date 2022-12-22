@@ -6,7 +6,7 @@
 
   <p>
     <strong>Body:</strong>
-    <%= article.body %>
+    <%= truncate(article.body, :length => 200) %>
   </p>
 
 </div>
