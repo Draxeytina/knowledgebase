@@ -90,6 +90,7 @@ GEM
     erubi (1.11.0)
     faker (3.0.0)
       i18n (>= 1.8.11, < 2)
+    fuzzy_match (2.1.0)
     globalid (1.0.0)
       activesupport (>= 5.0)
     i18n (1.12.0)
@@ -232,6 +233,7 @@ DEPENDENCIES
   capybara
   debug
   faker
+  fuzzy_match
   importmap-rails
   jbuilder
   kaminari

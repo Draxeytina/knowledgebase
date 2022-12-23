@@ -54,6 +54,9 @@ gem 'pg_search'
 # Introduce pagination
 gem 'kaminari'
 
+# For strings analysis
+gem 'fuzzy_match'
+
 # Use Active Storage variants [https://guides.rubyonrails.org/active_storage_overview.html#transforming-images]
 # gem "image_processing", "~> 1.2"
 
