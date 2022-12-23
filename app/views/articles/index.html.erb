@@ -3,18 +3,10 @@
 <h1>Articles</h1>
 
 <%= form_with(url: articles_path, method: :get, data: {turbo_frame: "articles"}) do |f| %>
-  <%= f.text_field :search, placeholder: "Search articles"%>
+  <%= f.text_field :search, value:params[:search], autocomplete:"off", placeholder: "Search articles"%>
   <%= f.submit "Search"%>
 <% end %>
 
 <div id="articles">
-  <% @articles.each do |article| %>
-    <%= render article %>
-    <p>
-      <%= link_to "Show this article", article %>
-    </p>
-  <% end %>
-
-  <%= link_to_prev_page @articles, 'Previous Page' %>
-  <%= link_to_next_page @articles, 'Next Page' %>
+  <%= render partial: "articles", locals: { articles: @articles } %>
 </div>

@@ -3,7 +3,13 @@ class ArticlesController < ApplicationController
 
   # GET /articles or /articles.json
   def index
-    @articles = Article.all.page(params[:page]).per(4)
+    @articles = Article.search(params[:search]).page(params[:page]).without_count.per(4)
+
+    if turbo_frame_request?
+      render(partial: "articles", locals: {articles: @articles})
+    else
+      render :index
+    end
   end
 
   # GET /articles/1 or /articles/1.json
