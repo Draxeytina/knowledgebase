@@ -2,8 +2,8 @@
 
 <h1>Articles</h1>
 
-<%= form_with(url: articles_path, method: :get, data: {turbo_frame: "articles"}) do |f| %>
-  <%= f.text_field :search, value:params[:search], autocomplete:"off", placeholder: "Search articles"%>
+<%= form_with(url: articles_path, method: :get, data: { controller: "search-form", turbo_frame: "articles"}) do |f| %>
+  <%= f.text_field :search, value:params[:search], autocomplete:"off", placeholder: "Search articles", data: { action: "input->search-form#search" } %>
   <%= f.submit "Search"%>
 <% end %>
 
