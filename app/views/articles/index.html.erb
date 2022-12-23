@@ -5,7 +5,7 @@
 <%= form_with(url: articles_path, method: :get, data: { controller: "search-form", turbo_frame: "articles"}) do |f| %>
   <%= f.text_field :search, value:params[:search], autocomplete:"off", placeholder: "Search articles", data: { action: "input->search-form#search" } %>
   <%= f.submit "Search"%>
-  <%= link_to "Show recent trends", trends_path %>
+  <%= link_to "Show recent searches", trends_path %>
 <% end %>
 
 <div id="articles">

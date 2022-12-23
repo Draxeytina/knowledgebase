@@ -4,10 +4,10 @@ class Article < ApplicationRecord
 
   include PgSearch::Model
   pg_search_scope :pg_search,
-    against: [:title, :body],
-    using: {
-      tsearch: {dictionary: 'english' }
-    }
+                  against: %i[title body],
+                  using: {
+                    tsearch: { dictionary: 'english' }
+                  }
 
   def self.search(search)
     return all unless search.present?
