@@ -11,8 +11,7 @@ class ArticlesController < ApplicationController
     else
       render :index
     end
-    
-    save_trend(session[:user_id], params[:search])
+    save_trend(session[:user_id], params[:search]='')
   end
 
   # GET /articles/1 or /articles/1.json
