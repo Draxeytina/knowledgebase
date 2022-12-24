@@ -8,7 +8,9 @@ https://user-images.githubusercontent.com/59999191/209432516-7cd917f1-4973-4797-
 - Ruby on rails
 
 ## See Project 🌐
-<a href="">Knowledge Base Live Demo</a>
+<a href="https://boiling-reaches-21636.herokuapp.com/">Knowledge Base Live Demo</a>
+
+https://user-images.githubusercontent.com/59999191/209436290-584a0176-7f96-44d7-9207-a65b4d004126.mp4
 
 ## Getting Started
 You may setup the project on your local machine using the following steps:
@@ -39,7 +41,8 @@ I would like to acknowledge the following for making this a success:
 
 >Note
 >> This is has been crafted according to specifications.
->> Room for improvement includes adding more analytics
+>> Room for improvement includes adding more analytics.
+>> Heroku did not support the stimulus gem, hence the live version will not load real-time. Improvements to be made.
 
 ## 📝 License
 
