@@ -1,0 +1,20 @@
+<p style="color: green"><%= notice %></p>
+
+<h1>Welcome. How Can We Help?</h1>
+
+<%= form_with(url: articles_path, method: :get, data: { controller: "search-form", turbo_frame: "articles"}) do |f| %>
+  <div class="form-top">
+    <%= f.text_field :search, value:params[:search], autocomplete:"off", placeholder: "Search articles", data: { action: "input->search-form#search" } %>
+    <%= f.submit "Search", id: "btn-submit" %>
+    <%= link_to "Show Searches", trends_path, class: "links", id:"btn-show-searches"%>
+  </div>
+<% end %>
+
+<div id="articles">
+  <% if @articles.empty? %>
+    <p>No result...</p>
+    <small>Tip: Search lengthy full english words to get correct results.</small>
+  <% else %>
+    <%= render partial: "articles", locals: { articles: @articles } %>
+  <% end %>
+</div>

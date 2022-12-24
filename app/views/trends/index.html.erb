@@ -1,0 +1,17 @@
+<p style="color: green"><%= notice %></p>
+
+<h1>Most searched words</h1>
+
+<div id="trends">
+  <% @trends.each do |trend, count| %>
+    <p>
+      "<%= trend %>" searched <%= count %> <%= count > 1 ? "times" : "time" %>
+    </p>
+    <hr class="hr-right" >
+  <% end %>
+</div>
+
+<div>
+  <%= link_to "Back to articles", articles_path, class: "links" %>
+</div>
+
