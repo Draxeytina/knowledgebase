@@ -34,7 +34,7 @@ You are welcome to make any contributions, issues, and feature requests!
 ## Show your support
 If you like this project please give a ⭐️!
 
-## Acknowledgments
+## Acknowledgements
 I would like to acknowledge the following for making this a success:
 - Emil Hajric
 - Microverse
