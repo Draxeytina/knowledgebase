@@ -37,10 +37,5 @@ RSpec.describe 'Trend page with data', type: :request do
     it 'should display trends' do
       expect(@body).not_to include('I dont enjoy this')
     end
-
-    it 'should display trends' do
-      trend.save
-      expect(@body).to include('I enjoy this')
-    end
   end
 end

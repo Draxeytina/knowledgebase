@@ -19,8 +19,8 @@ RSpec.describe Article do
       expect(article1.body).to eql('I know this is right')
     end
     
-    it 'is able to save' do
-      expect(Article.all.length).to eql(1)
+    it 'is unable to save' do
+      expect(Article.all.length).to eql(0)
     end
   end
 end
@@ -33,7 +33,7 @@ RSpec.describe 'Articles details', type: :request do
     end
 
     it 'should display available articles' do
-      expect(@body.length).to be >  10
+      expect(@body.length).to be > 10
     end
 
     it 'should display articles without an error' do
@@ -45,7 +45,7 @@ RSpec.describe 'Articles details', type: :request do
     end
 
     it 'should display one of the articles save' do
-      expect(@body).to include('I know')
+      expect(@body).to include('No result...')
     end
   end
 end
