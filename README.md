@@ -36,7 +36,7 @@ If you like this project please give a ⭐️!
 
 ## Acknowledgements
 I would like to acknowledge the following for making this a success:
-- Emil Hajric
+- Emil Hajric & <a href="https://www.linkedin.com/company/helpjuice/"> the Helpjuice team<a/>
 - Microverse
 
 >Note
