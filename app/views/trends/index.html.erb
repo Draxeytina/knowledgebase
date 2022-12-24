@@ -5,10 +5,13 @@
 <div id="trends">
   <% @trends.each do |trend, count| %>
     <p>
-      "<%= trend %>" searched <%= count %> times
+      "<%= trend %>" searched <%= count %> <%= count > 1 ? "times" : "time" %>
     </p>
+    <hr class="hr-right" >
   <% end %>
 </div>
 
-<%= link_to "Back to articles", articles_path %>
+<div>
+  <%= link_to "Back to articles", articles_path, class: "links" %>
+</div>
 

@@ -2,17 +2,17 @@
 
 <div id="<%= dom_id @article %>">
   <p>
-    <strong>Title:</strong>
+    <h1>Title:
     <%= @article.title %>
+    </h1>
   </p>
 
-  <p>
-    <strong>Body:</strong>
+  <p class="body-text">
     <%= @article.body %>
   </p>
 
 </div>
 
 <div>
-  <%= link_to "Back to articles", articles_path %>
+  <%= link_to "Back To Articles", articles_path, class: "links" %>
 </div>

@@ -1,15 +1,140 @@
-/*
- * This is a manifest file that'll be compiled into application.css, which will include all the files
- * listed below.
- *
- * Any CSS (and SCSS, if configured) file within this directory, lib/assets/stylesheets, or any plugin's
- * vendor/assets/stylesheets directory can be referenced here using a relative path.
- *
- * You're free to add application-wide styles to this file and they'll appear at the bottom of the
- * compiled file so the styles you add here take precedence over styles defined in any other CSS
- * files in this directory. Styles in this file should be added after the last require_* statement.
- * It is generally better to create a new file per style scope.
- *
- *= require_tree .
- *= require_self
- */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;700&display=swap');
+
+:root {
+  --bg-color: #f5f5f5;
+  --txt-color: #212121;
+  --pri-color: #2577a6;
+  --padding: 8px;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+  text-decoration-color: var(--txt-color);
+  text-decoration-style: none;
+  text-decoration: none;
+}
+
+body{
+  min-width: 375px;
+  background-color: var(--bg-color);
+}
+
+h1,
+form,
+input {
+  display: flex;
+  justify-content: center;
+  padding: var(--padding);
+}
+
+h1 {
+  min-width: 432px;
+}
+
+form {
+  min-width: 410px
+}
+
+input {
+  border-radius: 5px;
+}
+
+hr {
+  width: 25%;
+  height: 4px;
+  background: var(--pri-color);
+  border-radius: 5px;
+}
+
+a {
+  color: var(--txt-color);
+}
+
+#articles {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  margin: var(--padding);
+  padding: var(--padding);
+  row-gap: var(--padding);
+}
+
+#trends {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  flex-wrap: wrap;
+  align-items: flex-end;
+  row-gap: var(--padding);
+  margin: 16px var(--padding);
+  border-bottom: 1px solid var(--pri-color);
+  border-top: 1px solid var(--pri-color);
+  padding: var(--padding);
+  border-radius: var(--padding);
+}
+
+#btn-submit {
+  background: var(--pri-color);
+  color: white;
+  border: none;
+  border-radius: 5px;
+}
+
+#btn-submit:hover {
+  cursor: pointer;
+}
+
+.links {
+  display: flex;
+  justify-content: center;
+  margin-top: var(--padding);
+  background-color: var(--bg-color);
+}
+
+.form-top {
+  display: flex;
+  justify-content: center;
+  padding: var(--padding);
+  column-gap: var(--padding);
+  width: 80%;
+}
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  column-gap: var(--padding);
+}
+
+.body-text {
+  display: flex;
+  padding: var(--padding);
+  margin: 16px;
+  border-bottom: 1px solid var(--pri-color);
+  border-top: 1px solid var(--pri-color);
+  border-radius: var(--padding);
+}
+
+.hr-right {
+  width: 10%;
+}
+
+@media only screen and (max-width: 500px) {
+  body {
+    overflow-x: scroll;
+  }
+
+  h1 {
+    font-size: larger;
+  }
+
+  #btn-show-searches {
+    font-size: smaller;
+  }
+
+  .article-body,
+  .body-text {
+    font-size: small;
+  }
+}

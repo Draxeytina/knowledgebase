@@ -1,14 +1,17 @@
-  <%= turbo_frame_tag "articles" do %>
-    <% @articles.each do |article| %>
-      <strong>
-        <%= link_to article.title, article_path(article) %>
-      </strong>
+<%= turbo_frame_tag "articles" do %>
+  <% @articles.each do |article| %>
+    <strong>
+      <%= link_to article.title, article_path(article) %>
+    </strong>
 
-      <p>
-        <%= link_to truncate(article.body, :length => 200), article_path(article) %>
-      </p>
-    <% end %>
-
-    <%= link_to_prev_page @articles, 'Previous Page' %>
-    <%= link_to_next_page @articles, 'Next Page' %>
+    <p class="article-body">
+      <%= link_to truncate(article.body, :length => 200), article_path(article) %>
+      <hr>
+    </p>
   <% end %>
+
+  <div class="pagination">
+    <%= link_to_prev_page @articles, 'Previous Page', class: "links" %>
+    <%= link_to_next_page @articles, 'Next Page', class: "links" %>
+  </div>
+<% end %>
