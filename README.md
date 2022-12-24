@@ -41,7 +41,8 @@ I would like to acknowledge the following for making this a success:
 
 >Note
 >> This is has been crafted according to specifications.
->> Room for improvement includes adding more analytics.
+>> Future version will include analytics by topic searched.
+>> The use of pg_search was a trade-off of producing quality results over quick results due to ranking. 
 >> Heroku did not support the stimulus gem, hence the live version will not load real-time. Improvements to be made.
 
 ## 📝 License
