@@ -35,9 +35,8 @@ You are welcome to make any contributions, issues, and feature requests!
 If you like this project please give a ⭐️!
 
 ## Acknowledgements
-I would like to acknowledge the following for making this a success:
-- Emil Hajric & <a href="https://www.linkedin.com/company/helpjuice/"> the Helpjuice team<a/>
-- Microverse
+I would like to acknowledge the following for contributing:
+- Kudakwashe Siziva
 
 >Note
 >> This is has been crafted according to specifications.
