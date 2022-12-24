@@ -27,7 +27,7 @@ class ArticlesController < ApplicationController
     # Update previous searches or save if new
     @latest_trend.save if session_trends.empty?
     data_count = 0
-    while data_count < session_trends.length && (session_trends[data_count].search.to_s.pair_distance_similar search.to_s) < 0.50
+    while data_count < session_trends.length && (session_trends[data_count].search.to_s.similar search.to_s) < 0.50
       data_count += 1
     end
     data_count < session_trends.length ? session_trends[data_count].update(search:) : @latest_trend.save

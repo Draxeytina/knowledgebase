@@ -56,6 +56,7 @@ gem 'kaminari'
 
 # For strings analysis
 gem 'fuzzy_match'
+gem 'similar_text'
 
 # Linters
 gem 'rubocop', '>= 1.0', '< 2.0'
