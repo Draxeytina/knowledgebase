@@ -1,15 +1,14 @@
 # Knowledge Base
 A versatile budget application that allows a user to add expenses to a category and consequentially track expenses per category.
 
+https://user-images.githubusercontent.com/59999191/209432516-7cd917f1-4973-4797-a20c-676ff021588e.mp4
+
 ## Built With
 - Ruby
 - Ruby on rails
 
 ## See Project 🌐
 <a href="">Knowledge Base Live Demo</a>
-
-## Demonstration Video
-<a href="https://drive.google.com/file/d/1vyjHmxMyO2qEgNlTB5S5qwbhC2lOJqg8/view?usp=sharing">Knowledge Base Tutorial</a>
 
 ## Getting Started
 You may setup the project on your local machine using the following steps:
