@@ -43,7 +43,7 @@ I would like to acknowledge the following for making this a success:
 >> This is has been crafted according to specifications.
 >> Future version will include analytics by topic searched.
 >> The use of pg_search was a trade-off of producing quality results over quick results due to ranking. 
->> Heroku did not support the stimulus gem, hence the live version will not load real-time. Improvements to be made.
+>> <a href="https://discuss.rubyonrails.org/t/stimulus-controller-dont-work-at-all-on-heroku-rails-7/81514">Heroku did not support the stimulus gem,</a> hence the live version will not load real-time. Improvements to be made.
 
 ## 📝 License
 
