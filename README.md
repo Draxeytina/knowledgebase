@@ -12,6 +12,8 @@ https://user-images.githubusercontent.com/59999191/209432516-7cd917f1-4973-4797-
 
 https://user-images.githubusercontent.com/59999191/209436290-584a0176-7f96-44d7-9207-a65b4d004126.mp4
 
+** Update: After consultation with Heroku, an option would be to use dynos, which are virtual machines that can help you develop the application on the cloud and create a production environmnent with full dependencies supported. 
+
 ## Getting Started
 You may setup the project on your local machine using the following steps:
 
@@ -34,15 +36,11 @@ You are welcome to make any contributions, issues, and feature requests!
 ## Show your support
 If you like this project please give a ⭐️!
 
-## Acknowledgements
-I would like to acknowledge the following for contributing:
-- Kudakwashe Siziva
-
 >Note
 >> This is has been crafted according to specifications.
 >> Future version will include analytics by topic searched.
 >> The use of pg_search was a trade-off of producing quality results over quick results due to ranking. 
->> <a href="https://discuss.rubyonrails.org/t/stimulus-controller-dont-work-at-all-on-heroku-rails-7/81514">Heroku did not support the stimulus gem,</a> hence the live version will not load real-time. Improvements to be made.
+>> <a href="https://discuss.rubyonrails.org/t/stimulus-controller-dont-work-at-all-on-heroku-rails-7/81514">Heroku did not support the stimulus gem,</a> hence the live version will not load real-time. Improvements are to be made, and any suggestions are welcome.
 
 ## 📝 License
 
