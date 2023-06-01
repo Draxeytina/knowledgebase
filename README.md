@@ -8,7 +8,6 @@ https://user-images.githubusercontent.com/59999191/209432516-7cd917f1-4973-4797-
 - Ruby on rails
 
 ## See Project 🌐
-<a href="https://boiling-reaches-21636.herokuapp.com/">Knowledge Base Live Demo</a>
 
 https://user-images.githubusercontent.com/59999191/209436290-584a0176-7f96-44d7-9207-a65b4d004126.mp4
 
